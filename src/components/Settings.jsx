@@ -800,7 +800,7 @@ const Settings = ({ toggleCharts, title, cancelMessage }) => {
                     
                     {!refByAddress.length > 0 && (
                         <Box display="flex" flexDirection="column" justifyContent="center" marginY="1rem" p="0.5rem"  >
-                            <p>Got Discord? Add your Discord Username and earn 20% for every purchase that an invitee makes and on each payment afterward!<span style={{ display: "flex", width: "100%", justifyContent: "center" }}><img src='/src/assets/discord.png' style={{ display: "flex", margin: "2px auto", width: "40px" }} /></span></p>
+                            <p>Got Discord? Add your Discord Username and earn 20% for every purchase that an invitee makes and on each payment afterward!<span style={{ display: "flex", width: "100%", justifyContent: "center" }}><img src='/assets/discord.png' style={{ display: "flex", margin: "2px auto", width: "40px" }} /></span></p>
                             <input style={{width: "50%", margin: "0 auto" , borderRadius: '5px', background: 'transparent', alignItems: "center", justifyContent: "center", textAlign: 'center', border: '1px solid gray' , color: 'gray'}} type='text' placeHolder='@myuser2023' name="discordId" onChange={e => { setUserName(e.target.value) }} value={userName} />
 
                             <button onClick={() => { addReferralAddress(userName) }} style={{ width: "50%", margin: "5px auto", backgroundColor: colors.blueAccent[500], justifyContent: "center", alignText: "center", borderRadius: "5px", cursor: "pointer", display: "flex", padding: "0.5rem 1rem" }}><span style={{ display: "flex", width: "100%", alignText: "center", justifyContent: "center" }} >Generate Referral Code <FlashOnIcon /></span></button>
