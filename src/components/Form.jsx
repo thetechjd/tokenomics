@@ -10,7 +10,6 @@ import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined"
 import { icoData as data } from "../data/ico_data";
 import { TypeAnimation } from 'react-type-animation';
 import { Configuration, OpenAIApi } from "openai";
-//import SkillBar from 'react-skillbars';
 import ProgressBar from "@ramonak/react-progress-bar";
 import CountUp from 'react-countup';
 
