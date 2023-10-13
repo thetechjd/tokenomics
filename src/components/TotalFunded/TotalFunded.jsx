@@ -1,10 +1,11 @@
 import { useTheme } from "@mui/material";
 import { useState } from 'react';
 import { ResponsiveBar } from "@nivo/bar";
-import { tokens } from "../theme";
-import { icoData as data } from "../data/ico_data";
+import { tokens } from "../../theme";
+import { icoData as data } from "../../data/ico_data";
 import { Box, Typography } from "@mui/material"
 import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined"
+import "./totalfunded.css"
 
 
 const TotalFunded = ({ title, toggleCharts }) => {
@@ -240,7 +241,7 @@ const TotalFunded = ({ title, toggleCharts }) => {
             />
 
             {title === "Investment" && (
-                <Box justifyContent="start" textAlign="start" width="50%" marginTop="1rem">
+                <div className='graph' >
                     <Typography variant="h3">Filter By Utility</Typography>
                     <select
                         required
@@ -254,7 +255,7 @@ const TotalFunded = ({ title, toggleCharts }) => {
                         <option value="metaverse">METAVERSE</option>
 
                     </select>
-                </Box>
+                </div>
 
             )}
         </Box>

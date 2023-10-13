@@ -145,6 +145,7 @@ function App() {
         } else {
 
         setUser(user);
+        showLoginModal(false)
         
         console.log(user);
         }

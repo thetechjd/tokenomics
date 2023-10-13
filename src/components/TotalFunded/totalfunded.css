@@ -1,0 +1,19 @@
+.graph {
+
+    justify-content: start;
+    text-align: start;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+
+
+
+@media (max-width:690px){
+
+    .graph {
+        width: 100%
+    }
+}
+
+

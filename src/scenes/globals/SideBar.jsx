@@ -70,7 +70,9 @@ const SideBar = ({ toggleCharts }) => {
     }
 
     return (
+        <div class='sidebar'>
         <Box
+
         
             sx={{
                 "& .pro-sidebar": {
@@ -206,7 +208,7 @@ const SideBar = ({ toggleCharts }) => {
                             Charts
                         </Typography>
                         <Item
-                            title="Your Tokenomics"
+                            title="Tokenomics Builder"
                             icon={<AssessmentOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
@@ -253,6 +255,7 @@ const SideBar = ({ toggleCharts }) => {
             </ProSidebar>
 
         </Box>
+        </div>
     )
 }
 

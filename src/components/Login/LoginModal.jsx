@@ -4,6 +4,7 @@ import { Box, Typography } from "@mui/material"
 //import HidePassword from './HidePassword'
 import { useTheme } from "@mui/material"
 import { tokens } from "../../theme"
+import "./login.css"
 
 
 export default function LoginModal({
@@ -63,7 +64,7 @@ export default function LoginModal({
             {/*<div className='absolute bg-black w-full bg-transparent z-0'>*/}
 
             <Box position="absolute" display="flex" alignItems="center" width="100%" justifyContent="center">
-                <div ref={wrapperRef} style={{zIndex:"3", position: "relative", backgroundColor: "black", justifyContent: "center", alignItems:"center", padding: "2.5rem 4rem", width: "50%"}} >
+                <div className="login" ref={wrapperRef}  >
                     <div onClick={() => { showLoginModal(false); setReset(false) }} style={{display: "flex", right: "0", justifyContent: "end", cursor: "pointer"}} >
                         <p className='text-white'>X</p>
                     </div>
