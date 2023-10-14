@@ -11,6 +11,7 @@ import Ratio from "../../components/Ratio"
 import Form from "../../components/Form/Form"
 import Settings from "../../components/Settings"
 //import Verify from "../../components/Login/Verify"
+import Bumper from "../globals/Bumper"
 import LoginModal from "../../components/Login/LoginModal"
 import "./index.css"
 
@@ -112,9 +113,8 @@ const Dashboard = ({
                     {/*ROW 1 */}
 
                     {title !== "Tokenomics Builder" && (
-                         <div className='builder-btn'>
-                         <button  style={{backgroundColor: colors.blueAccent[500]}}  onClick={()=> {toggleCharts("Tokenomics Builder")}}>TOKENOMICS BUILDER</button>
-                     </div>
+                        <Bumper 
+                        toggleCharts={toggleCharts}/>
 
                     )}
                    
